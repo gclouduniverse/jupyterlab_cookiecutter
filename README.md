@@ -23,8 +23,10 @@ Generate a new extension from the template:
 cookiecutter https://github.com/gclouduniverse/jupyterlab_cookiecutter -o my_extension
 ```
 
+Change to the generated project directory:
+
 ```bash
-cd my_extension/jupyterlab_cookiecutter # Change to the generated project directory
+cd my_extension/jupyterlab_cookiecutter # Change this to the generated project directory
 ```
 
 To build, install, and launch run:
