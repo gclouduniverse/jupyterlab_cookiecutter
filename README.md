@@ -1,6 +1,6 @@
-# {{cookiecutter.project_title}} Extension
+# Cookie Cutter Extension
 
-JupyterLab extension project
+Cloud AI Platform Notebooks JupyterLab extension cookie cutter project
 
 ## Prerequisites
 
@@ -9,18 +9,37 @@ JupyterLab extension project
 * [Virtualenv](https://virtualenv.pypa.io/en/latest/) (Recommended for local development)
 * [NPM](https://nodejs.org/en/) (For local development)
 
-## GCP Installation
+## Quick Start
 
-This should work on Google Cloud Deep Learning VM M19+.
-
-### Install Google Cloud Deep Learning VM from local
-
-Use the [deploy.sh](./deploy.sh) script to build the extension locally, upload, and
-install on a DLVM over SSH using the instance name. Requires gcloud from the Google Cloud SDK to be [installed](https://cloud.google.com/sdk/install).
+Install [cookiecutter](https://pypi.org/project/cookiecutter/):
 
 ```bash
-./deploy.sh ${INSTANCE_NAME?}
+pip install cookiecutter
 ```
+
+Generate a new extension from the template:
+
+```bash
+cookiecutter https://github.com/gclouduniverse/jupyterlab_cookiecutter -o my_extension
+```
+
+```bash
+cd my_extension/jupyterlab_cookiecutter # Change to the generated project directory
+```
+
+To build, install, and launch run:
+
+```bash
+virtualenv -p python3 venv && \
+source venv/bin/activate && \
+pip install jupyterlab==1.2.6 && \
+pip install . && \
+npm install && \
+jupyter labextension install . --no-build && \
+jupyter lab build && \
+npm start
+```
+
 ### Manually install from local
 
 ```bash
