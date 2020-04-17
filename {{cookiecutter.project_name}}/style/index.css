@@ -1,0 +1,4 @@
+.{{cookiecutter.settings_icon_class}} {
+  background-image: url('./images/storage_24px.svg');
+  background-size: contain;
+}

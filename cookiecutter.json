@@ -1,0 +1,16 @@
+{
+    "project_name": "jupyterlab_cookies",
+    "project_title": "Notebook Cookies",
+    "settings_icon_class":"jp-CookiesIcon",
+    "settings_icon_label":"Cookies",
+    "settings_title":"Cookies Project",
+    "settings_description":"Cookie Cutter Project",
+    "settings_project_title":"Notebook Cookies",
+    "settings_project_description":"Cookie Cutter Project",
+    "extenion_caption":"Cookies",
+    "extenion_id":"cookies",
+    "extenion_class":"jp-CookiesIcon",
+    "extenion_namespace":"cookies",
+    "plugin_id":"cookies:cookies",
+    "api_name":"cookies"
+}

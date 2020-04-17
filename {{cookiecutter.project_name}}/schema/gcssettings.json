@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "jupyter.lab.setting-icon-class": "{{cookiecutter.settings_icon_class}}",
+  "jupyter.lab.setting-icon-label": "{{cookiecutter.settings_icon_label}}",
+  "title": "{{cookiecutter.settings_title}}",
+  "description": "{{cookiecutter.settings_description}}",
+  "type": "object",
+  "properties": {
+    "projectId": {
+      "type": "string",
+      "title": "{{cookiecutter.settings_project_title}}",
+      "description": "{{cookiecutter.settings_project_description}}"
+    }
+  }
+}
