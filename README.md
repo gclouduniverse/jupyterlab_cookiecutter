@@ -17,7 +17,7 @@ Install [cookiecutter](https://pypi.org/project/cookiecutter/):
 pip install cookiecutter
 ```
 
-Generate a new extension from the template:
+Generate a new extension from the template. Press enter at each of the prompts to accept the default value or add the `--no-input` flag:
 
 ```bash
 cookiecutter https://github.com/gclouduniverse/jupyterlab_cookiecutter -o my_extension
