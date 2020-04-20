@@ -34,7 +34,6 @@ To build, install, and launch run:
 ```bash
 virtualenv -p python3 venv && \
 source venv/bin/activate && \
-pip install jupyterlab==1.2.6 && \
 pip install . && \
 npm install && \
 jupyter labextension install . --no-build && \

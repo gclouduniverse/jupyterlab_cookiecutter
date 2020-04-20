@@ -76,7 +76,7 @@ export class ListWordItem extends React.Component<Props, {}> {
       <li className={localStyles.item}>
         <div className={localStyles.icon}>{this.getIconForWord(word)}</div>
         <div className={localStyles.details}>
-          <a className="{css.link}" href="#" target="_blank">
+          <a className="{css.link}" href="#">
             {word.word}
           </a>
           <span className={localStyles.wordTime}>
@@ -87,8 +87,7 @@ export class ListWordItem extends React.Component<Props, {}> {
           <a
             className={localStyles.viewLink}
             href="#"
-            target="_blank"
-            title="View Notebook"
+            title="View Word"
           >
             &nbsp;
           </a>
