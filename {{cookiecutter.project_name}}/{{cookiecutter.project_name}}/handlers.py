@@ -40,3 +40,8 @@ class ListHandler(APIHandler):
     except Exception as e:
       app_log.exception(str(e))
       self.set_status(500, str(e))
+      self.finish({
+        'error':{
+          'message': str(e)
+          }
+        })
