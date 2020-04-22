@@ -26,7 +26,7 @@ cookiecutter https://github.com/gclouduniverse/jupyterlab_cookiecutter -o my_ext
 Change to the generated project directory:
 
 ```bash
-cd my_extension/jupyterlab_cookiecutter # Change this to the generated project directory
+cd my_extension/jupyterlab_cookies # Change this to the generated project directory
 ```
 
 To build, install, and launch run:
