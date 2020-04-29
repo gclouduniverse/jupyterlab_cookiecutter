@@ -1,6 +1,6 @@
 # Cookie Cutter Extension
 
-Cloud AI Platform Notebooks JupyterLab extension cookie cutter project
+Cloud AI Platform Notebooks JupyterLab extension cookiecutter project for quickly generating a JupyterLab extension that follows AI Platform best practices. The extension will display a list of strings retrieved from a JupyterLab backend in a React-based side panel widget. Follow the Quick Start instructions to get JupyterLab up and running with a custom example extension installed.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ cookiecutter https://github.com/gclouduniverse/jupyterlab_cookiecutter -o my_ext
 Change to the generated project directory:
 
 ```bash
-cd my_extension/jupyterlab_cookiecutter # Change this to the generated project directory
+cd my_extension/jupyterlab_cookies # Change this to the generated project directory
 ```
 
 To build, install, and launch run:
@@ -36,6 +36,7 @@ virtualenv -p python3 venv && \
 source venv/bin/activate && \
 pip install . && \
 npm install && \
+npm run build && \
 jupyter labextension install . --no-build && \
 jupyter lab build && \
 npm start
